@@ -26,7 +26,6 @@ const AboutSection = () => {
                     end: "bottom bottom-=100",
                     id: `section-${index + 1}`,
                     scrub: true,
-                    markers: true
                 }
             })
         })
@@ -54,7 +53,7 @@ const AboutSection = () => {
                     </a>
                 </div>
                 <div className="w-1/4 ">
-                    <img className='w-full' src="/aaa.jpeg" alt="" />
+                    <img className='w-full' src={process.env.PUBLIC_URL + '/aaa.jpeg'} alt="" />
                 </div>
             </div>
             {/* Timeline */}

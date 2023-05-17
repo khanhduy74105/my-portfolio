@@ -78,7 +78,7 @@ const Personal = () => {
       </div>
       <div ref={imgRef} className="relative w-80 h-80 overflow-hidden rounded-full">
         <div className="w-80 h-80 bg-gray-300 rounded-full"></div>
-        <img className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-contain' src="/anhdaidien-trans-preview.png" alt="" />
+        <img className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-contain' src={process.env.PUBLIC_URL + '/anhdaidien-trans-preview.png'} alt="" />
       </div>
     </div>
   )

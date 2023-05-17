@@ -63,7 +63,7 @@ const Header = () => {
 
     return (
         <div ref={ref} className={`h-20 py-3 px-6 flex items-center justify-between fixed top-0 right-0 left-0 z-10 bg-gradient-to-r from-[#274046] dark:from-[#b3b8b3] to-[#616161] dark:to-[#f3f3f3]`}>
-            <ul className="flex items-center gap-16">
+            <ul className="flex items-center gap-4 md:gap-12">
                 <NavLink to={'about'} className={({ isActive }) => `text-white dark:text-black hover:bg-[#efeaea41] cursor-pointer px-4  py-1 text-xl  ${isActive ? 'font-semibold text-white' : 'font-medium text-gray-300'}`}>About</NavLink>
                 <NavLink to={'projects'} className={({ isActive }) => `text-white dark:text-black hover:bg-[#efeaea41] cursor-pointer px-4  py-1 text-xl  ${isActive ? 'font-semibold text-white' : 'font-medium text-gray-300'}`}>Projects</NavLink>
                 <NavLink to={'skills'} className={({ isActive }) => `text-white dark:text-black hover:bg-[#efeaea41] cursor-pointer px-4  py-1 text-xl  ${isActive ? 'font-semibold text-white' : 'font-medium text-gray-300'}`}>Skills</NavLink>
@@ -73,9 +73,9 @@ const Header = () => {
                 <div className="w-10 h-10 rounded-full border-white dark:border-black border-2 flex items-center justify-center cursor-pointer " onClick={onChangeTheme}>
                     {isDarkMode ? <BsMoonStars fill='black' /> : <MdSunny />}
                 </div>
-                <div className="flex items-center gap-2 text-xl text-white dark:text-black"><FaMapMarkerAlt fill={!isDarkMode ? "white" : "black"} size={24} />Đà Nẵng, Việt Nam</div>
+                <div className="items-center gap-2 text-xl text-white dark:text-black hidden md:flex"><FaMapMarkerAlt fill={!isDarkMode ? "white" : "black"} size={24} />Đà Nẵng, Việt Nam</div>
                 <span className='text-white dark:text-black'>|</span>
-                <a className="text-xl rounded-md px-2 border-white dark:border-black border-2 text-white dark:text-black" download={true} href='/aaa.jpeg'>Resume</a>
+                <a className="text-xl rounded-md px-2 border-white dark:border-black border-2 text-white dark:text-black" href='https://drive.google.com/file/d/12bAvk45TNLpRfjKkwK2sn7QnnHBOsOvf/view'>Resume</a>
             </div>
         </div>
     )
