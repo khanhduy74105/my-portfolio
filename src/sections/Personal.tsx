@@ -61,24 +61,24 @@ const Personal = () => {
           </div>
         ))}
         <div className="flex items-center justify-start mt-4 gap-6 ">
-          <a href='/' className="rounded-full border-2 p-2 social-item relative border-white dark:border-black">
+          <a href='https://www.linkedin.com/in/duy-nguy%E1%BB%85n-th%C3%A1i-kh%C3%A1nh-837b0725b/' className="rounded-full border-2 p-2 social-item relative border-white dark:border-black">
             <TfiLinkedin className='fill dark:fill-black' />
             <span className="hidden text-xs text-black absolute top-full px-2 rounded-lg bg-gray-300 left-1/2 mt-1 -translate-x-1/2">LinkedIn</span>
           </a>
-          <a href='/' className="rounded-full border-2 p-2 social-item relative border-white dark:border-black">
+          <a href="mailto:duyntk74105@gmail.com" className="rounded-full border-2 p-2 social-item relative border-white dark:border-black">
             <FiMail className='fill dark:fill-black' />
             <span className="hidden text-xs text-black absolute top-full px-2 rounded-lg bg-gray-300 left-1/2 mt-1 -translate-x-1/2">Gmail</span>
           </a>
-          <a href='/' className="rounded-full border-2 p-2 social-item relative border-white dark:border-black">
+          <a href='https://github.com/khanhduy74105' className="rounded-full border-2 p-2 social-item relative border-white dark:border-black">
             <FiGithub className='fill dark:fill-black' />
             <span className="hidden text-xs text-black absolute top-full px-2 rounded-lg bg-gray-300 left-1/2 mt-1 -translate-x-1/2">Github</span>
           </a>
 
         </div>
       </div>
-      <div ref={imgRef} className="relative w-96 h-96">
-        <div className="w-96 h-96 bg-gray-300 rounded-full  animate-scale"></div>
-        <img className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2' src="/aaa.jpeg" alt="" />
+      <div ref={imgRef} className="relative w-80 h-80 overflow-hidden rounded-full">
+        <div className="w-80 h-80 bg-gray-300 rounded-full"></div>
+        <img className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-contain' src="/anhdaidien-trans-preview.png" alt="" />
       </div>
     </div>
   )
